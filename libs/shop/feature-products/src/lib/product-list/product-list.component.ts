@@ -266,11 +266,9 @@ export class ProductListComponent implements OnInit {
   // Computed values
   readonly hasMorePages = computed(() => this.totalPages() > 1);
 
-  temp: string;
   ngOnInit() {
     this.loadCategories();
     this.loadProducts();
-    this.temp = 5;
   }
 
   loadCategories() {
